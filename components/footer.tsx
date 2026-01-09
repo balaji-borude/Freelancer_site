@@ -2,78 +2,31 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-primary text-primary-foreground border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary-foreground rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">&lt;/&gt;</span>
-              </div>
-              <span className="font-bold text-lg">DevTeam</span>
+    <footer className="bg-background border-t border-white/5 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-black text-white">B</div>
+            <div>
+              <p className="font-black text-foreground">BroCodes</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-widest">Built for Bros</p>
             </div>
-            <p className="text-primary-foreground/80">College developers building modern web solutions</p>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80 text-sm">
-              <li>
-                <a href="#services" className="hover:text-primary-foreground transition">
-                  Web Development
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-primary-foreground transition">
-                  Portfolio Sites
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-primary-foreground transition">
-                  Student Projects
-                </a>
-              </li>
-            </ul>
+          
+          <div className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
+            <a href="#about" className="hover:text-foreground transition-colors">Station</a>
+            <a href="#services" className="hover:text-foreground transition-colors">Execution</a>
+            <a href="#why-us" className="hover:text-foreground transition-colors">Rules</a>
+            <a href="#contact" className="hover:text-indigo-500 transition-colors">Ping</a>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Company</h4>
-            <ul className="space-y-2 text-primary-foreground/80 text-sm">
-              <li>
-                <a href="#about" className="hover:text-primary-foreground transition">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#why-us" className="hover:text-primary-foreground transition">
-                  Why Us
-                </a>
-              </li>
-              <li>
-                <a href="#tech" className="hover:text-primary-foreground transition">
-                  Tech Stack
-                </a>
-              </li>
-            </ul>
+
+          <div className="text-sm text-muted-foreground text-right">
+            <p>© {currentYear} BroCodes. Just code.</p>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Contact</h4>
-            <ul className="space-y-2 text-primary-foreground/80 text-sm">
-              <li>
-                <a href="mailto:hello@devteam.com" className="hover:text-primary-foreground transition">
-                  Email
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-primary-foreground transition">
-                  Get in Touch
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/80 text-sm">
-          <p>© {currentYear} DevTeam. Made with ❤️ by college developers</p>
+
         </div>
       </div>
     </footer>
   )
 }
+
